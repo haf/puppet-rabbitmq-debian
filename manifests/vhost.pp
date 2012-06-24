@@ -15,7 +15,7 @@ define rabbitmq::vhost($ensure = present) {
       }
     }
     default: {
-      fatal("ensure must be present or absent, not ${ensure}")
+      fail("ensure must be present or absent, not ${ensure}")
     }
   }
 }

@@ -23,7 +23,7 @@ define rabbitmq::user($ensure = present, $password = undef, $user_tag = "") {
       }
     }
     default: {
-      fatal("ensure must be present or absent, not ${ensure}")
+      fail("ensure must be present or absent, not ${ensure}")
     }
   }
 }

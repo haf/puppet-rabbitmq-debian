@@ -18,7 +18,7 @@ define rabbitmq::plugin($enable = true) {
       }
     }
     default: {
-      fatal("enable must be true or false, not ${enable}")
+      fail("enable must be true or false, not ${enable}")
     }
   }
 }

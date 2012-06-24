@@ -17,7 +17,7 @@ define rabbitmq::permissions($ensure = present, $vhost = "/", $conf = ".*", $rea
       }
     }
     default: {
-      fatal("ensure must be present or absent, not ${ensure}")
+      fail("ensure must be present or absent, not ${ensure}")
     }
   }
 }
